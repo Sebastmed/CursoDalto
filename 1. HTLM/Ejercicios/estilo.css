@@ -1,0 +1,16 @@
+body {
+    background-color: #40bfbe;
+    margin: 20px;
+    text-align: center;
+}
+
+.form {
+    color: white;
+    font-size: 21px;
+    border: 2px solid black;
+}
+
+.titulo {
+    color: #1c040d;
+    font-size: 80px;
+}

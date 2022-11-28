@@ -1,0 +1,467 @@
+/*_______________________________________________________________________________________________________________________________
+												CSS EN HTML
+	<head>	
+		<style> 
+			reglas a aplicar
+		</style>
+		<link rel="stylesheet" type="text/css" href="Teoría.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+
+	</head>
+	<body>
+		<h1 style="color: blue"		
+	<body>
+*/
+/*_____________________________________________________________________________________________________________________________
+													SELECTORES
+
+h1	{							IMPORTANT 																			- J1
+	color: red !important
+}
+-----------------------------------------------------------------------------------------------------------------------------
+
+								ESTILOS EN LINEA - En HTML <h1 class="color-red" style="color: yellow;">NOMBRE</h1> - J2
+								style es el estilo que queremos darle
+----------------------------------------------------------------------------------------------------------------------------
+
+#id-del-elemento {				Por ID viene de <h1 id="id-del-elemento">NOMBRE</h1> 								- J3
+	color: red;		
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+.titulo-h2 {					Por CLASE viene de <h1 class="titulo-h2">NOMBRE</h1>  								- J4
+	color: red;
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+[ejemplo="algo"] {				Por ATRIBUTO de <h1 ejemplo="algo">NOMBRE</h1> 										- J4
+	color: red;
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+.titulo:hover {					PSEUDO-CLASE																		- J5
+	color: red;
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+div {
+	color: red;					ELEMENTO 																			-J5
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+h1:hover {						PSEUDO-ELEMENTO 																	- J5
+	color: red;
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+.titulo {
+	color: blue					DESCENDIENTE de <h2 class="titulo"><b>Bienvenidos a la <span>clase</span></b></h1>  
+}								'Bienvenidos a la' iría azul y 'clase' en rojo
+.titulo b span {
+	color: red; 
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+*/
+/*____________________________________________________________________________________________________________________________
+															CAJAS
+
+div, h1 {
+	margin: 20px;						DISTANCIA DEL CONTENEDOR CON LA PANTALLA Y OTROS ELEMENTOS
+										margin: auto; (centra la caja)
+										margin: 50px auto; (le da 50px de márgen y la centra (eje y - x))
+										margin-top
+										margin-right
+										margin-bottom
+										margin-left
+										
+	border: 5px solid black;    		BORDES DEL CONTENEDOR (GROSOR - TIPO DE BORDE - COLOR)
+										Altera el tamaño de la caja
+										Tipos: solid, dashed, double, groove, ridge, inset, outset;
+										border-top: 5px solid black ;
+										border-right: 5px solid black ;										
+										border-bottom: 5px solid black ;										
+										border-border: 5px solid black ;
+
+	padding: 20px 15px 10px 5px;		DISTANCIA DEL CONTENIDO CON LA CAJA (top - right - bottom -left)
+										padding-top: 20px;
+										padding-right: 15px;
+										padding-bottom: 10px;
+										padding-left: 5px;
+										padding: auto;	(centra la caja)
+
+	border-radius: 10px;				REDONDEA EL BORDE DE LA CAJA (px, %, em)
+
+	background-color: red;				COLOR DE LA CAJA
+
+	background: lightblue;				FONDO DE LA CAJA (shorthand)
+
+	box-shadow: 2px 4px 15px 1px #000;	SOMBRA DE LA CAJA	
+
+	height: 100px;						ALTO DE LA CAJA		(Sólo se le puede dar a elementos en bloque)	
+										vh alto de la pantalla		50vh	ocuparía la mitad del alto				
+										% alto de la caja			50%		ocuparía la mitad de la caja
+
+	width: 700px;						ANCHO DE LA CAJA	(Sólo se le puede dar a elementos en bloque)
+										wh ancho de la pantalla		50vw	ocuparía la mitad del ancho
+										% ancho de la caja			50%		ocuparía la mitad de la caja
+	min-with: 700px;					
+
+	box-sizing: content-box;			Suma las propiedades
+
+	box-sizing: border-box;				Mantenga el tamaño del height y width
+
+	transform: rotate(90deg);			ROTA LA CAJA EN GRADOS
+}
+*/
+/*_____________________________________________________________________________________________________________________________
+														TEXTO
+div .title{
+	
+	color: red;							COLOR DE LA LETRA
+	
+	font-size: 60px;					TAMAÑO DE LA LETRA
+	
+	font-family: sans-serif;			TIPO DE LETRA
+	
+	line-height: 1;						INTERLINEADO
+	
+	font-weight: normal;				GROSOR DE LA LETRA
+	
+	text-align: center;					ALINEACIÓN DEL TEXTO
+	
+	text-shadow: 1px 2px 3px #000;		SOMBRA DE LA LETRA
+}
+*/
+/*_________________________________________________________________________________________________________________________________
+													CAJA Y TEXTO
+
+div {
+	opacity: 0.5;						Le da opacidad a la caja o texto
+}
+
+div {
+	outline: 10px solid blue;			RESALTA OBJETOS (no ocupa lugar - no altera la caja)
+}
+
+*/
+/*_______________________________________________________________________________________________________________________
+													DISPLAY
+
+div {
+	display: block;						SE COMPORTA COMO BLOQUE
+	
+	display: inline;					SE COMPORTA COMO LINEA
+
+	display: inline-block;				BLOQUE PERO QUE SE ADAPTE AL CONTENIDO		
+
+	display: grid;
+
+	display: flex;
+
+	display: inline-grid;
+
+	display: inline-flex; 
+
+
+}
+*/
+
+/*_____________________________________________________________________________________________________________________
+												POSICIONAMIENTO
+							POSITION posiciona la caja para que adquiera nuevas propiedades
+									(top - right - bottom - left) (z-index: 0;)
+
+div {
+	position: static;					NO ESTÁ POSICIONADA
+	
+	position: relative;					CONSERVA EL ESPACIO (las propiedades aplican desde el espacio de la caja)
+	
+	position: absolute;					NO CONSERVA EL ESPACIO (las propiedades aplican desde el viewport)
+										La caja se adapta al contenido
+	
+	position: fixed;					FIJA LA CAJA A LA PÁGINA
+	
+	position: sticky;					Se comporta como fixed, pero conserva el espacio
+
+	top: 10px; PRIORIDAD
+	right: 10px; 
+	bottom: 10px;
+	left: 10px; PRIORIDAD
+
+	z-index: 0;							El valor más alto se superpone
+										Si padre e hijo están posicionadas, al hijo (z-index: -1;)
+										Única forma en que el hijo esté por encima del padre
+
+}
+
+-----------------------------------------------------EJEMPLO----------------------------------------------------------
+
+div {
+	display: block;
+	position: absolute;
+	background: yellow;
+}
+
+div div {
+	height: 50px;
+	width: 50px;
+}
+
+.contenedor {
+	position: relative;
+	border: 3px	solid blue;
+	margin: 100px auto;
+	height: 400px;
+	width: 400px;
+}
+
+
+.caja1 {
+	background: blue;
+	top: 0;
+}
+.caja2 {
+	background: red;
+	right: 0;
+}
+.caja3 {
+	background: green;
+	bottom: 0;
+	left: 0;
+}
+.caja4 {
+	background: brown;
+	right: 0;
+	bottom: 0;	
+}
+
+.caja5 {
+	background: violet;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+		
+}
+*/
+/*__________________________________________________________________________________________________________________________________
+													SCROLL DE LAS WEBS
+
+div {
+	overflow: inherit;				POR DEFECTO (shorthand de overflow-x: ; overflow: overflow-y: ;)
+
+	overflow: auto;					DETECTA TEXTO SOBRESALIENTE Y AÑADE SCROLL
+
+	overflow: scroll;				AGREGA SCROLL SIEMPRE
+
+	overflow: hidden;				OCULTA EL SCROLL
+
+}
+*/
+/*____________________________________________________________________________________________________________________________________
+													    FLOAT
+
+
+
+*/
+/*______________________________________________________________________________________________________________________________________
+													PSEUDO-ELEMENTOS
+
+.texto::first-line {				CAMBIA LAS PROPIEDADES DE LA PRIMER LINEA (funciona para bloques)	
+	color: red
+
+.texto::first-letter {				CAMBIA LAS PROPIEDADES DE LA PRIMER LETRA (funciona para bloques)	
+	color: red
+
+.texto::placeholder {				CAMBIA LAS PROPIEDADES DEL TEXTO DENTRO DE LOS INPUT				
+	color: red
+
+.texto::selection {					CAMBIA LAS PROPIEDADES DEL TEXTO SELECCIONADO (funciona como elemento en linea)				
+	color: red
+
+.texto::after {						CREA HIJOS DEL ELEMENTO AL QUE LE ESTAMOS APLICANDO EL PSEUDO / EL CONTENT ES NECESARIO 				
+	content: "algo";				SON ELEMENTOS INLINE
+	color: red 						
+ 		
+.texto::before {					CREA HIJOS DEL ELEMENTO AL QUE LE ESTAMOS APLICANDO EL PSEUDO / EL CONTENT ES NECESARIO 				
+	content: "algo";				SON ELEMENTOS INLINE
+	color: red 						
+
+
+*/
+/*_________________________________________________________________________________________________________________________________
+													PSEUDO-CLASES
+
+div:hover {							CUANDO EL CURSOR PASA SOBRE 
+	
+}	
+
+div:link {							CUANDO NO VISITASTE EL LINK
+	
+}	
+
+div:visited {						CUANDO VISITASTE EL LINK
+	
+}	
+
+div:active {						CUANDO MANTENES CLICKEADO				
+	
+}	
+
+div:focus {							CAUNDO ESTÁ CLICKEADO	
+	
+}	
+
+div:lang(en) {						DETECTA EL IDIOMA Y APLICA LOS CAMBIOS 
+	
+}	
+
+*/
+/*_____________________________________________________________________________________________________________________________________
+											  OBJET-FIT (para imágenes)
+img {
+	object-fit: contain;			MANTIENE LAS RESOLUCIONES DE LA IMÁGEN Y SE ADJUSTAN A LA CAJA
+
+	object-fit: cover;				SE AJUSTA AL CONTENEDOR Y SE CUBRE LO QUE SOBRA
+
+	object-fit: none;				HACE LO QUE QUIERE
+
+	object-fit: scale-down;			SE QUEDA CON LA MEJOR PROPIEDAD
+
+
+													OBJET-POSITION
+
+img {
+	object-position: left			SE MUESTRA DEL LADO DE LA IZQUIERDA
+
+	object-position: right			SE MUESTRA DEL LADO DE LA DERECHA
+
+	object-position: top			SE MUESTRA DEL LADO DESDE ARRIBA
+
+	object-position: bottom			SE MUESTRA DEL LADO DESDE ABAJO
+
+
+
+
+}	
+*/
+/*__________________________________________________________________________________________________________________________________________
+													FLEX BOX
+
+MAIN AXIS 			MAIN-START -->  MAIN-END
+
+CROSS AXIS			CROSS-START
+						 i
+						 i
+						 V
+					 CROSS-END
+
+
+.flex-container {							CONTENEDOR - BLOQUE (los items de adentro pasan a ser cajas flexibles)
+	display: flex;							POR DEFECTO, LOS ITEMS SE COMPORTAN COMO FILA (flex-direction: row;)
+
+	flex-direction: row;					LOS ITEMS SE COMPORTAN COMO FILA
+	flex-direction: column;					LOS ITEMS SE COMPORTAN COMO COLUMNA
+	flex-direction: row-reverse;			INVIERTE LA DIRECCIÓN DE LA FILA (EMPIEZA EN END Y TERMINA EN START)
+	flex-direction: column-reverse;			INVIERTE LA DIRECCIÓN DE LA COLUMNA (EMPIEZA EN END Y TERMINA EN START)
+	
+	flex-wrap:  wrap;						RESPETA EL ANCHO DE LAS CAJAS Y LAS TIRA HACIA ABAJO, SI SE ACHICA LA PANTALLA - ESTIRA LOS ITEMS SIN W/H
+	flex-wrap:  nowrap;						VALOR POR DEFECTO
+	flex-wrap:  wrap-reverse;				RESPETA EL ANCHO DE LAS CAJAS Y LAS TIRA HACIA ARRIBA, SI SE ACHICA LA PANTALLA - ESTIRA LOS ITEMS SIN W/H
+	
+	flex-flow: flex-direction flex-wrap;	SHORTHAND DE DIRECTION Y WRAP
+
+	justify-content: center;				CENTRA LOS ITEMS CON MENOS MARGEN QUE "AROUND"
+	justify-content: space-around;			CENTRA LOS ITEMS DANDO UN MARGEN AUTOMÁTICO A LOS ITEMS casi igual a "margin: auto;"
+	justify-content: space-between;			CENTRA LOS ITEMS MAYOR MARGEN A LOS ITEMS
+	justify-content: space-evenly;			CENTRA LOS ITEMS DANDO IGUAL MARGEN A TODOS INCLUYENDO LOS EXTREMOS
+
+	align-items:							PARA CUANDO HAY 1 SOLA LINEA DE FLEX-ITEM, NCESITA EL height: ; (vh)
+	align-items: flex-start;				PONE LOS ITEMS AL PRINCIPIO VERTICALMENTE, SI EL ITEM NO TIENE HEIGHT ADAPTA LA CAJA AL CONTENIDO
+	align-items: flex-end;					PONE LOS ITEMS EN EL FINAL VERTICALMENTE, SI EL ITEM NO TIENE HEIGHT ADAPTA LA CAJA AL CONTENIDO
+	align-items: center;					CENTRA LOS ITEMS VERTICALMENTE
+	align-items: stretch;					PROPIEDAD POR DEFECTO, SI EL ITEM NO TIENE HEIGHT ESTIRA LA CAJA HASTA ABAJO
+	align-items: baseline;
+
+	align-content: ;						PARA CUANDO HAY MAS DE 1 LINEA DE FLEX-ITEM
+	align-content: flex-start;				
+	align-content: flex-end;				
+	align-content: center;					
+	align-content: stretch;					
+	align-content: baseline;
+
+
+.flex-item {								ITEMS DENTRO DEL CONTENEDOR (cajas flexibles) PROPIEDADES - ALINEACIÓN EN EL CROSS AXIS
+	align-self: flex-start;
+	align-self: flex-end;
+	align-self: center;
+	align-self: stretch;
+	align-self: baseline;
+
+
+	flex-grow: 1;							HACE QUE LAS CAJAS SEAN FLEXIBLES A LO ANCHO CON EL ESPACIO SOBRANTE
+	flex-shrink: 1;							EL ESPACIO QUE CEDE CADA CAJA
+	flex-basis: 1;							FUNCIONA COMO EL WITDTH PARA FLEX-ITEM
+	flex: 1 1 1;							SHORTHAND DE GROW SHRINK Y BASIS - NECESITA AL MENOS 1 PARÁMETRO
+	
+	order: ;								COMO Z-INDEX PERO EN EL EJE X (MAIN-AXIS)
+
+}
+
+*/
+
+
+.flex-container {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	background: #444;
+	margin: 50px 50px;
+
+
+}
+
+.form {
+	min-width: 400px;
+	flex: 1;
+	text-align: center;
+	padding: 30px;
+}
+
+.form__input {
+	width: 100%;
+	padding: 7px;
+	margin: 6px 0;
+}
+
+.form-img {
+	flex: 1;
+	padding: 10px;
+	display: flex;
+}
+
+.img-container {
+	margin: auto;
+	background: white;
+	border-radius: 50%;
+}
+
+.form-img img {
+	width: 100%;
+	
+		
+}
+
+.form textarea {
+	min-height: 140px;
+}
