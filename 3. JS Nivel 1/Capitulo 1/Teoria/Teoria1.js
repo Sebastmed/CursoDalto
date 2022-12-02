@@ -54,7 +54,7 @@ Ariteméticos:               Los operadores Aritméticos toman valores numérico
                             (**) exponenciación (se debe declarar la potencia, ejemplo: 5**2 (5 al cuadrado))
                             (++) incremento (primero se ejecuta, luego se muestra)
                             (*) multiplicación
-                            (&) resto
+                            (%) resto
                             (-) sustracción
                             (-) negativo (ejemplo -número)
                             (+) positivo (ejemplo +número)

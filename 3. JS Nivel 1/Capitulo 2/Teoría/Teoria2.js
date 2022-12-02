@@ -26,12 +26,12 @@ for () {                                Bucle determinado. En el paréntesis se 
 }                                       la condición y luego el aumento o el decremento.
                                         (let i = algo; i < 6; i++).
 
-for (algo in arrays) {                  Bucle que va pasando por un arrays y toma la posición en la que está el elemento.
-                                        Donde algo es la variable.                  
+for (NOMBRE in arrays) {                Bucle que va pasando por un arrays y toma la posición en la que está el elemento.
+                                        Donde NOMBRE es la variable.                  
 }                                       
 
-for (algo of arrays) {                  Bucle que va pasando por un arrays y toma el valor que tiene cada elemento.                  
-                                        Donde algo es la variable.
+for (NOMBRE of arrays) {                Bucle que va pasando por un arrays y toma el valor que tiene cada elemento.                  
+                                        Donde NOMBRE es la variable.
 } 
 
 break                                   Interrumpe el bucle (se puede usar con un if).
