@@ -24,6 +24,7 @@ NaN                         No es un número
 prompt()                    Función que nos va a devolver un dato
 alert()                     Mensaje en ventana emergente
 document.write()            Se escibe en la página
+console.log()               Muestra en consola el resultado
 
 CONCATENACIÓN               Es unir strings
                             

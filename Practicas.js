@@ -1,11 +1,19 @@
-function tablaDelSeis(){
-   let tablaDel6 = []
-   for(let i = 0; i < 11; i++){
-    tablaDel6.push(6 * i)
-    } 
-    return tablaDel6;
-}
+var suma = 0;
 
-  
-resultado = tablaDelSeis()
-document.write(resultado)
+do {
+
+  var numero = prompt("Agrega números para sumar");
+
+  if (Number(numero) == numero){
+    numero == Number(numero);
+    resultado = suma + numero;
+    }
+  else{
+    alert("No es un numero");
+  }
+}  
+
+while(confirm("Desea seguir?"));
+
+
+document.write(resultado);
