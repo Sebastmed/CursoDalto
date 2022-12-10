@@ -1,5 +1,5 @@
 /*
-METODOS DE CADENA
+METODOS DE CADENA       variable.propiedad()
 
 concat()                Junta dos o más cadenas y retorna una nueva.
 
@@ -8,6 +8,7 @@ endsWith()              Si una cadena termina con los caracteres de otra cadena,
 includes()              Si una cadena puede encontrarse dentro de otra cadena, devuelve true, sino devuelve false.
 indexOf()               Devuelve el índice del primer caracter de la cadena, si hay coincidencia, sino -1.
 lastIndexOf()           devuelve el último índice del primer caracter de la cadena si hay coincidencia, sino -1.
+Number.isInteger()      Determina si el valor es entero, si lo es devulev true, sino devuelve false.
 
 padStart(8,"")          [propuesta de Esandar] - Rellenar cadena al principio con los caracteres deseados.
 padEnd(10,"")           [propuesta de ECMA] - Rellenar cadena al final con los caracteres deseados.
@@ -43,12 +44,17 @@ slice()             Devuelve una parte del array dentro de un nuevo array empeza
 toString()          MÉTODOS DE CADENA
 includes()          MÉTODOS DE CADENA
 indexOf()           MÉTODOS DE CADENA
-lastIndexOf()       MÉTODOS DE CADENA
+lastIndexOf()                            MÉTODOS DE CADENA
 
 Repetición:
 
-filter()            Crea un nuevo array con todos los elementos que cumplan la condición.
-forEach()           Ejecuta la función indicada una vez por cada elemento del array.
+filter()                    Crea un nuevo array con todos los elementos que cumplan la condición.
+forEach()                   Ejecuta la función indicada una vez por cada elemento del array.
+
+Otras:
+arrays.at()                 Nos da el elemento dentro del array, si usamos negativos va del último al primero.
+array.length                Nos dice cúantos elementos tiene el array.
+array[array.lenght-1]       Nos da el último elemento del array.
 
 
 OBJETO MATH - BÁSICO

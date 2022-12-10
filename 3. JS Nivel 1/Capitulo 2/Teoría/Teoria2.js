@@ -36,7 +36,7 @@ for (NOMBRE of arrays) {                Bucle que va pasando por un arrays y tom
 
 break                                   Interrumpe el bucle (se puede usar con un if).
 continue                                Se saltea el bucle (se puede usar con un if).
-leable                                  
+label                                  
 
 FUNCIONES                               Parte de un código
 
