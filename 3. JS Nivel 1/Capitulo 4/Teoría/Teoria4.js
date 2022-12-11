@@ -32,8 +32,8 @@ Transformadores:
 pop()               Elimina el último elemento de un array y lo devuelve.
 shift()             Elimina el primer elemento de una array y lo devuelve.
 push()              Agrega un elemento al array al final de la lista.
-reverse()           Invierte el orden de los elementos de una array.
 unshift()           Agrega uno o más elementos al inicio del array, y devuelve la nueva longitud del array.
+reverse()           Invierte el orden de los elementos de una array.
 sort()              Ordena los elementos de un array localmente y devuelve el arreglo ordenado.
 splice()            Cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos.
 
